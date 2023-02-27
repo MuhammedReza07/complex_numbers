@@ -3,9 +3,9 @@ use std::ops;
 use std::f64;
 
 #[derive(Clone, Copy)]
-struct Complex {
-    real: f64,
-    imaginary: f64
+pub struct Complex {
+    pub real: f64,
+    pub imaginary: f64
 }
 
 impl fmt::Display for Complex {
