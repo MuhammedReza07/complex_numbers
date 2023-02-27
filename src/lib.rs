@@ -1,6 +1,4 @@
-use std::fmt;
-use std::ops;
-use std::f64;
+use std::{fmt, ops, f64};
 
 #[derive(Clone, Copy)]
 pub struct Complex {
