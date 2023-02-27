@@ -3,7 +3,7 @@ use std::{fmt, ops, f64};
 #[derive(Clone, Copy)]
 pub struct Complex {
     pub real: f64,
-    pub imaginary: f64
+    pub imaginary: f64,
 }
 
 impl fmt::Display for Complex {
