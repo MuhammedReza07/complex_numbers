@@ -37,6 +37,9 @@ impl ops::Mul for Complex {
 }
 
 impl Complex {
+    pub fn new(real: f64, imaginary: f64) -> Complex {
+        Complex {real: real, imaginary: imaginary}
+    }
     pub fn abs(self) -> f64 {
         ((self.real * self.real) + (self.imaginary * self.imaginary)).sqrt()
     }
