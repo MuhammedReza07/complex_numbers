@@ -43,4 +43,11 @@ impl Complex {
     pub fn abs(self) -> f64 {
         ((self.real * self.real) + (self.imaginary * self.imaginary)).sqrt()
     }
+    pub fn compare_abs(self, value: f64) -> bool {
+        if (self.real * self.real) + (self.imaginary * self.imaginary) > value * value {
+            return true
+        } else {
+            return false
+        }
+    }
 }
